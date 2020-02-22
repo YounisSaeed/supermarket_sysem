@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="loadPane" prefHeight="697.0" prefWidth="1366.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="employees.account.accept.attendence.AttendenceController">
+    <stylesheets>
+        <URL value="@attendence.css" />
+    </stylesheets>
+   <children>
+      <JFXButton layoutX="734.0" layoutY="186.0" onAction="#att_btn" prefHeight="65.0" prefWidth="211.0" text="تسجيل حضور">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="734.0" layoutY="284.0" onAction="#leave_dtn" prefHeight="65.0" prefWidth="211.0" text="انصراف">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </JFXButton>
+      <JFXButton contentDisplay="RIGHT" layoutX="1152.0" layoutY="20.0" onAction="#loadBack" prefHeight="65.0" prefWidth="172.0" styleClass="back" stylesheets="@attendence.css" text=" رجوع">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../icons/arrow.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="difference_btn" layoutX="734.0" layoutY="392.0" onAction="#differenceAction" prefHeight="65.0" prefWidth="211.0" text="عدد الساعات">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="start_work" focusColor="#2045b5" labelFloat="true" layoutX="384.0" layoutY="192.0" prefHeight="39.0" prefWidth="211.0" styleClass="textfield" stylesheets="@ATTEN.css" unFocusColor="#f8f8f8">
+         <font>
+            <Font name="Baskerville Old Face" size="24.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="differenceText" focusColor="#2045b5" labelFloat="true" layoutX="384.0" layoutY="405.0" prefHeight="39.0" prefWidth="211.0" styleClass="textfield" stylesheets="@ATTEN.css" unFocusColor="#f8f8f8">
+         <font>
+            <Font name="Baskerville Old Face" size="24.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="finish_work" focusColor="#2045b5" labelFloat="true" layoutX="384.0" layoutY="295.0" prefHeight="39.0" prefWidth="211.0" styleClass="textfield" stylesheets="@ATTEN.css" unFocusColor="#f8f8f8">
+         <font>
+            <Font name="Baskerville Old Face" size="24.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>
